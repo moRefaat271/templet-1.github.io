@@ -1,0 +1,57 @@
+/*Smart Phones & Tablets*/
+@media(max-width: 767px) {
+    .myNav .btn-default {
+        display: block;
+        width: 590px;
+    }
+    .myNav .test-5default-theme ,
+    .myNav .test-5black-theme {
+        float: left;
+    }
+    .subscribe .container form .btn {
+        float: right;  
+        position: relative;
+        bottom: 46px;
+    }
+    .subscribe .container form input {
+    border-radius: 0;
+    margin-right: -5px;
+    width: 600px;    
+}
+}
+/*Small Screen*/
+@media(min-width: 768px) and (max-width: 991px) {
+    .navbar-form .form-control {
+    display: inline-block;
+    width: 80px;
+    vertical-align: middle;
+}
+    
+}
+/*Medium Screen*/
+@media(min-width: 992px) and (max-width: 1199px) {
+    
+.myMdL {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    position: relative;
+    top: 81px;
+}
+.products .container .rows .style {
+    background-color: darkcyan;
+    border: 2px solid whitesmoke;
+    min-height: 811.5px;
+}
+}
+/*Large Screen*/
+@media(min-width: 1200px) {
+    
+.myMdL {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    position: relative;
+    top: 60px;
+}
+}

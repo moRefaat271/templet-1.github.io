@@ -1,0 +1,337 @@
+.containerr {        
+    height: 70px;
+    background-color: teal;
+    margin-bottom: 20px;
+}
+.red {
+    background-color: brown;
+    padding: 10px;
+    color: darkgoldenrod;
+        
+}
+.tabs {
+    list-style: none;
+    
+}
+.tabs li {
+    float: left;
+    margin: 30px 10px;
+    cursor: pointer;
+    color: saddlebrown;
+    font-style: oblique;
+}
+.tabs li:hover {
+    color: yellow;
+}
+.content {
+    width: 300px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    margin:  10px 0 0 45px;
+    position: absolute;
+    top: 76px;
+    border-radius: 0 0 20px 20px;
+    display: none;
+}
+/*Start Navbar*/
+.myNav {
+}
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-nav > li > .dropdown-menu {
+    background-color: black;
+}
+.dropdown-menu > li > a {
+    color: white;
+    -webkit-transition: padding .5s ease;
+    -moz-transition: padding .5s ease;
+    -o-transition: padding .5s ease;
+    transition: padding .5s ease;
+}
+.dropdown-menu > li > a:hover {
+    background-color: brown;
+    color:darkorange;
+    padding-left: 40px;
+}
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #903838;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+    background-color: darkorange;
+}
+/*End Navbar*/
+/*Start Carousel*/
+/* change sliding speed
+.item {
+    display: none;
+    position: relative;
+    .transition(1s ease-in-out left);
+}
+*/
+/*change carousel height*/
+.carousel-inner .item img {
+    height: 610px;
+    width: 1366px;
+}
+.carousel-caption {
+    background:rgba(3,3,3,0.3)
+}
+/* End change in carousel*/
+/*Start About Me*/
+.aboutSt {
+    padding: 20px 10px;
+    border-radius: 20px;
+    background-color:whitesmoke;
+}
+.aboutSt h1 ,
+.aboutSt p {
+    color: black;
+}
+/*End About Me*/
+/*Start Features*/
+.features {
+    background-color: darkorange;
+}
+.features h1 {
+    font-weight: bold;
+    font-style: oblique;
+}
+.features .row .feat {
+    padding: 24px;
+    opacity: .8;
+}
+.features .row .feat span {
+    font-size: 30px;
+}
+
+/*End Features*/
+/*Start testimonials */
+.testimonials {
+    background: #3c3037;
+}
+.testimonials .container {
+    opacity: .8;
+    color: white;
+}
+.testimonials .container h1{
+    padding: 25px 0;
+    font-weight: bold;
+    color: darkorange;
+}
+.testimonials .lead {}
+.testimonials span {
+    color: brown;
+    font-size: 25px;
+    font-weight: bold;
+}
+.testimonials .container .carousel .carousel-indicators {
+    position: static;
+    margin: 20px auto;
+}
+.testimonials .container .carousel .carousel-indicators li {
+    text-indent: 0;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 50px;
+    opacity: .5;
+    border: 5px solid whitesmoke;
+    margin: 5px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.testimonials .container .carousel .carousel-indicators li:hover ,
+.testimonials .container .carousel .carousel-indicators li.active {
+    width: 90px;
+    height: 90px;
+    margin-bottom: -20px;
+    opacity: 1;
+    border: 5px solid brown;
+}
+.testimonials .container .carousel .carousel-indicators li:hover {
+    border: 5px solid darkorange;
+    -webkit-transform:scale(1.1,1.1) rotate(360deg);
+    -moz-transform:scale(1.1,1.1) rotate(360deg);
+    -o-transform:scale(1.1,1.1) rotate(360deg);
+    transform:scale(1.1,1.1) rotate(360deg);
+}
+.testimonials .container .carousel .carousel-indicators li img {
+    width: 100%;
+    height: 100%;
+}
+/*End testimonials */
+/*Strat Products */
+.products {
+    background-color:darkcyan;
+}
+.products .container {
+    padding: 50px 0;
+}
+.products .container .rows .style {
+    background-color:darkcyan;    
+    border: 2px solid whitesmoke;
+    min-height: 747.5px;
+}
+.products .container .rows .col-lg-3 .buttons {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left:44px;
+}
+.products .container .rows .style:hover {   
+    border: 5px solid darkgoldenrod;
+}
+.products .container .rows .style h1 {
+    font-weight: bold;
+    color: brown;
+}/*                                                                       */                                                                                   
+.products .container .rows .style:hover h2 span{
+    -webkit-transform:scale(1.1,1.1) rotate(360deg);
+    -moz-transform:scale(1.1,1.1) rotate(360deg);
+    -o-transform:scale(1.1,1.1) rotate(360deg);
+    transform:scale(1.1,1.1) rotate(360deg);
+    border: 5px solid brown;    
+}
+.products .container .rows .style h2 span {
+    background-color:whitesmoke;
+    border-radius: 50px;
+    font-weight: bold;
+    color: darkgreen;
+    -webkit-transition-duration: .5s ;
+    -moz-transition-duration: .5s ;
+    -o-transition-duration: .5s;
+    transition-duration: .5s ;
+}
+.products .container .rows .style h3 {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 100px;
+    margin: auto;
+    background-color: whitesmoke;
+    font-weight: bold;
+    color: orangered;
+    opacity: .9;
+    
+}
+
+/*End Products */
+/*Start Our Team*/
+.our-team {
+    background: url('../imgs/digital1.jpg') no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 600px;
+}
+.our-team .team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: rgba(2,2,2,.7);
+    min-height:600px; 
+    color:whitesmoke;
+}
+.our-team h1 {
+    margin-bottom:60px;
+}
+/*End Our Team*/
+/*start subscripe*/
+.subscribe {
+    background-color: gray;
+}
+.subscribe .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.subscribe .container h1 {
+    padding-bottom: 30px;
+}
+.subscribe .container form input {
+    border-radius:0;
+    margin-right:-5px;
+    width:300px;
+}
+.subscribe .container form .btn {
+    border-radius:0;
+    margin-left:0;
+}
+/*End subscripe*/
+/*Start Skills*/
+.our-skills {
+    padding-top: 30px;
+    padding-bottom: 70px;
+    background-color:whitesmoke;
+}
+.our-skills h1 {
+     font-weight:bold;
+}
+.our-skills h1 ,
+.our-skills h2 ,
+.our-skills p{
+   
+    color: black
+}
+.our-skills .myProgress {
+    padding-top:30px;
+}
+.our-skills .Progress {
+    height: 43px;
+}
+.our-skills .Progress {
+    line-height: 43px;
+}
+/*End Skillse*/
+/*Start Contact Us*/
+.contact-us {
+    background: url('../imgs/contact-us1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 400px;
+}
+.contact-us .contact {
+    background-color:rgba(8,8,8,.5);
+    min-height: 400px;
+    
+}
+.contact-us .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact-us .contact i ,h1 ,p{
+    color:whitesmoke
+}
+.contact-us .contact form textarea {
+    height: 117px;
+}
+.contact-us input ,
+.contact-us textarea {
+    background-color: rgba(82,78,78,.7);
+    color:whitesmoke;
+}
+/*End Contact Us*/
+/*Start Scroll Top*/
+.scroll {
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+    background-color: darkred;
+    position: fixed; 
+    bottom:10px;
+    right:10px;
+    display: none;
+    z-index: 99999;
+    cursor: pointer;
+}
+.scroll i:hover {
+    color:whitesmoke;
+}
+/*End Scroll Top*/

@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--[IE Compatibility meta]-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!--[meta for mobile]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+    <meta name="description" content="description of content of the site">
+    <title>Templet-1</title>
+        <!--[normalize file exists in bootstrap file]
+        <link rel="stylesheet" href="../css/normalize.css">
+-->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/hover-min.css">
+        <link rel="stylesheet" href="css/templet-1default-theme.css"> 
+        <link rel="stylesheet" href="css/media.css">
+        <!--[if it's IE]-->
+    </head>
+    <style>
+        .templet-1default-theme {
+            background-color: white;
+            color: black;
+            width: 50px;
+            height: 30px;
+            border-radius: 25px;
+            float: right;
+            border: 1px;
+            margin: 10px;
+            cursor: pointer;
+}
+        .templet-1black-theme {
+            background-color: black;
+            color: white;
+            width: 50px;
+            height: 30px;
+            border-radius: 25px;
+            float: right;
+            border: 1px;
+            margin: 10px 10px 10px 0;
+            cursor: pointer;
+}
+      /*Start Loading*/
+        body {
+            overflow: hidden;
+        }
+        .sk-circle {
+  margin: 100px auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.sk-circle .sk-child {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sk-circle .sk-child:before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 15%;
+  background-color: #333;
+  border-radius: 100%;
+  -webkit-animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+          animation: sk-circleBounceDelay 1.2s infinite ease-in-out both;
+}
+.sk-circle .sk-circle2 {
+  -webkit-transform: rotate(30deg);
+      -ms-transform: rotate(30deg);
+          transform: rotate(30deg); }
+.sk-circle .sk-circle3 {
+  -webkit-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+          transform: rotate(60deg); }
+.sk-circle .sk-circle4 {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+.sk-circle .sk-circle5 {
+  -webkit-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+          transform: rotate(120deg); }
+.sk-circle .sk-circle6 {
+  -webkit-transform: rotate(150deg);
+      -ms-transform: rotate(150deg);
+          transform: rotate(150deg); }
+.sk-circle .sk-circle7 {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+.sk-circle .sk-circle8 {
+  -webkit-transform: rotate(210deg);
+      -ms-transform: rotate(210deg);
+          transform: rotate(210deg); }
+.sk-circle .sk-circle9 {
+  -webkit-transform: rotate(240deg);
+      -ms-transform: rotate(240deg);
+          transform: rotate(240deg); }
+.sk-circle .sk-circle10 {
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg); }
+.sk-circle .sk-circle11 {
+  -webkit-transform: rotate(300deg);
+      -ms-transform: rotate(300deg);
+          transform: rotate(300deg); }
+.sk-circle .sk-circle12 {
+  -webkit-transform: rotate(330deg);
+      -ms-transform: rotate(330deg);
+          transform: rotate(330deg); }
+.sk-circle .sk-circle2:before {
+  -webkit-animation-delay: -1.1s;
+          animation-delay: -1.1s; }
+.sk-circle .sk-circle3:before {
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s; }
+.sk-circle .sk-circle4:before {
+  -webkit-animation-delay: -0.9s;
+          animation-delay: -0.9s; }
+.sk-circle .sk-circle5:before {
+  -webkit-animation-delay: -0.8s;
+          animation-delay: -0.8s; }
+.sk-circle .sk-circle6:before {
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s; }
+.sk-circle .sk-circle7:before {
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s; }
+.sk-circle .sk-circle8:before {
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s; }
+.sk-circle .sk-circle9:before {
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s; }
+.sk-circle .sk-circle10:before {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s; }
+.sk-circle .sk-circle11:before {
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s; }
+.sk-circle .sk-circle12:before {
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s; }
+
+@-webkit-keyframes sk-circleBounceDelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes sk-circleBounceDelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+        .loading {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: darkorange;
+        }
+    .sk-circle .sk-child {
+    width: 300%;
+    height: 299%;
+    position: absolute;
+    left: -30px;
+    top: 219px;
+        }
+        .sk-circle .sk-child:before {
+            background-color: whitesmoke;
+        }
+        /*End Loading*/
+       
+    </style>
+    <body>
+<!--start navbar-->
+        <section class="myNav" style="">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">moRefaat</a>
+                </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active pop"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>         
+                            </ul>       
+                        </li>
+                        <li>
+                            <button class="templet-1black-theme">Dark</button>
+                            <button class="templet-1default-theme">White</button>
+                        </li>
+                    </ul>
+                    
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        </section>
+<!--end navbar-->
+        
+<!-- Carousel Default -->
+  <section class="carousel-default">
+    <div id="carousel-default" class="carousel slide" data-ride="carousel">
+        
+        
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-default" data-slide-to="0" class=""></li>
+        <li data-target="#carousel-default" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-default" data-slide-to="2" class="active"></li>
+          
+      </ol>
+        
+        
+      <div class="carousel-inner" role="listbox">
+        <!-- NOTE: Bootstrap v4 changes class name to carousel-item -->
+        <div class="item">
+          <img style="width: 100%" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/guitar.jpg" alt="First slide">
+          <div class="carousel-caption">
+            <h3>A man with a camera</h3>
+            <p>He is probably taking a picture</p>
+          </div>
+        </div>
+        <div class="item">
+          <img style="width: 100%" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/spiderweb.jpg" alt="Second slide">
+          <div class="carousel-caption">
+            <h3>Down came the rain</h3>
+            <p>And washed the spider out</p>
+          </div>
+        </div>
+        <div class="item active">
+          <img style="width: 100%" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/hearthand.jpg" alt="Third slide">
+          <div class="carousel-caption">
+            <h3>Making love</h3>
+            <p>She is probably taking a picture</p>
+          </div>
+        </div>
+      </div>
+        
+        
+      <a class="left carousel-control" href="#carousel-default" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-default" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+<!-- /end Carousel Default -->
+        <section class="red">
+        <div class="container">
+                        <div class="row aboutSt">
+                            <div class="col-sm-4 col-xs-12">
+                                <img class="img-responsive center-block img-circle" src="imgs/mo.jpg" alt="mohamed refaat">
+                            </div>
+                            <div class="col-sm-8 col-xs-12">
+                                <h1>Mohamed Refaat</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum mollis maximus eu non felis. Suspendisse rutrum facilisis magna, ut mattis lacus dapibus sit amet. Aliquam erat volutpat. Donec nibh felis, consequat vel enim ultrices, tincidunt hendrerit justo. Phasellus lacus velit, mollis id quam quis, luctus elementum dui. Phasellus cursus ipsum id lectus mattis consectetur. Pellentesque euismod ex at facilisis pulvinar. In hac habitasse platea dictumst. Pellentesque quis interdum nisl.
+                                </p>
+                            </div>
+            </div>
+            </div>
+            </section>
+<!-- Start Features-->
+        <section class="features text-center">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-xs-12 feat">
+                        <h1>Features</h1>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6 col-xs-12 feat">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <h3>100% Responsive</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 feat">
+                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                        <h3>Retina Ready</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 feat">
+                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                        <h3>Awesome Display</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 feat">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
+                        <h3>Well Documented</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum </p>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+<!-- End Features-->
+<!-- Start Testimonial-->
+        <section class="testimonials text-center">
+            <div class="container">
+                <h1>Clients Support</h1>
+                <div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
+                    
+        
+               <div class="carousel-inner" role="listbox">
+                   <div class="item">
+                       <p class="lead">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum mollis maximus eu non felis. Suspendisse rutrum facilisis magna, ut mattis lacus dapibus sit amet. Aliquam erat volutpat. Donec nibh felis, consequat vel enim ultrices, tincidunt hendrerit justo. Phasellus lacus velit, mollis id quam quis, luctus elementum dui. Phasellus cursus ipsum id lectus mattis consectetur. Pellentesque euismod ex at facilisis pulvinar. In hac habitasse platea dictumst. Pellentesque quis interdum nisl.
+                       </p>
+                       <span>Ahmed</span>
+                   </div> 
+                   <div class="item">
+                        <p class="lead">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum mollis maximus eu non felis. Suspendisse rutrum facilisis magna, ut mattis lacus dapibus sit amet. Aliquam erat volutpat. Donec nibh felis, consequat vel enim ultrices, tincidunt hendrerit justo. Phasellus lacus velit, mollis id quam quis, luctus elementum dui. Phasellus cursus ipsum id lectus mattis consectetur. Pellentesque euismod ex at facilisis pulvinar. In hac habitasse platea dictumst. Pellentesque quis interdum nisl.
+                       </p>
+                       <span>Nada</span>
+                   </div>
+                   <div class="item">
+                        <p class="lead">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum mollis maximus eu non felis. Suspendisse rutrum facilisis magna, ut mattis lacus dapibus sit amet. Aliquam erat volutpat. Donec nibh felis, consequat vel enim ultrices, tincidunt hendrerit justo. Phasellus lacus velit, mollis id quam quis, luctus elementum dui. Phasellus cursus ipsum id lectus mattis consectetur. Pellentesque euismod ex at facilisis pulvinar. In hac habitasse platea dictumst. Pellentesque quis interdum nisl.
+                       </p>
+                       <span>Khaled</span>
+                    </div>
+                    <div class="item active">
+                        <p class="lead">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum mollis maximus eu non felis. Suspendisse rutrum facilisis magna, ut mattis lacus dapibus sit amet. Aliquam erat volutpat. Donec nibh felis, consequat vel enim ultrices, tincidunt hendrerit justo. Phasellus lacus velit, mollis id quam quis, luctus elementum dui. Phasellus cursus ipsum id lectus mattis consectetur. Pellentesque euismod ex at facilisis pulvinar. In hac habitasse platea dictumst. Pellentesque quis interdum nisl.
+                       </p>
+                       <span>Arwa</span>
+                    </div>
+                </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-testimonial" data-slide-to="0" class="active"><img src="imgs/avatar1.jpg" alt="avatar"></li>
+                        <li data-target="#carousel-testimonial" data-slide-to="1" class=""><img src="imgs/avatar7.jpg" alt="avatar"></li>
+                        <li data-target="#carousel-testimonial" data-slide-to="2" class=""><img src="imgs/avatar3.jpg" alt="avatar"></li>
+                        <li data-target="#carousel-testimonial" data-slide-to="3" class=""><img src="imgs/avatar4.jpg" alt="avatar"></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+<!-- End Testimonial-->
+<!-- Start Products-->
+        <section class="products text-center">
+            <div class="container">
+                <div class="rows">
+                    <div class="col-md-3 col-sm-6 col-xs-12 style">
+                        <img class="img-responsive center-block" src="imgs/bars.jpg" alt="bars">
+                        <h1> Dumbbell<br> & Bar</h1>
+                        <h2><span>3,990</span> Pounds</h2>
+                        <h3><span>-43%</span></h3>
+                        <ul class="list-unstyled">
+                            
+                            <li>1* Bar 165cm</li>
+                            <li>2* Bar 35 cm</li>
+                            <li>4* weights 1.25 Kg</li>
+                            <li>2* weights 2.5 Kg </li>
+                            <li>4* weights 5 Kg</li>
+                            <li>4* weights 7.5 Kg</li>
+                            <li>2* weights 10 Kg</li>
+                        </ul>
+                        <div class="buttons">
+                        <a href="https://www.jumia.com.eg/ar/generic-weight-set-of-17-pcs-dumbbell-bar-2-pcs-17652847.html" class="myMdL btn btn-primary">Add To Cart <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                        <a href="https://www.jumia.com.eg/ar/generic-weight-set-of-17-pcs-dumbbell-bar-2-pcs-17652847.html" class="myMdL btn btn-primary">Buy Now</a>
+                        </div>    
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 style">
+                        <img class="img-responsive center-block" src="imgs/lap.jpg" alt="bars">
+                        <h1>Apple MacBook</h1>
+                        <h2><span>32,999</span> Pounds</h2>
+                        <h3><span>-6%</span></h3>
+                        <ul class="list-unstyled">
+                            <li>2.4GHz quad-core 8th-generation Intel Core i5 processor, Turbo Boost up to 4.1GHz</li>
+                            <li>Retina display with True Tone</li>
+                            <li>Touch Bar and Touch ID</li>
+                            <li>8GB 2133MHz LPDDR3 memory</li>
+                            <li>Intel Iris Plus Graphics 655</li>
+                            <li>256GB SSD storage</li>
+                            <li>Four Thunderbolt 3 ports</li>
+                            <li>Backlit Keyboard - US English</li>
+                        </ul>
+                        <div class="buttons">
+                        <a href="https://www.jumia.com.eg/ar/apple-macbook-pro-13-with-touch-bar-mid-2019-mv992lla-intel-core-i5-8gb-ram-256gb-ssd-13.3-inch-retina-intel-gpu-macos-silver-english-keyboard-16102745.html" class="btn btn-primary">Add To Cart <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                        <a href="https://www.jumia.com.eg/ar/apple-macbook-pro-13-with-touch-bar-mid-2019-mv992lla-intel-core-i5-8gb-ram-256gb-ssd-13.3-inch-retina-intel-gpu-macos-silver-english-keyboard-16102745.html" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 style">
+                        <img class="img-responsive center-block" src="imgs/bars.jpg" alt="bars">
+                        <h1> Dumbbell<br> & Bar</h1>
+                        <h2><span>3,990</span> Pounds</h2>
+                        <h3><span>-43%</span></h3>
+                        <ul class="list-unstyled">
+                           
+                            <li>1* Bar 165cm</li>
+                            <li>2* Bar 35 cm</li>
+                            <li>4* weights 1.25 Kg</li>
+                            <li>2* weights 2.5 Kg </li>
+                            <li>4* weights 5 Kg</li>
+                            <li>4* weights 7.5 Kg</li>
+                            <li>2* weights 10 Kg</li>
+                        </ul>
+                        <div class="buttons">
+                        <a href="https://www.jumia.com.eg/ar/generic-weight-set-of-17-pcs-dumbbell-bar-2-pcs-17652847.html" class="myMdL btn btn-primary">Add To Cart <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                        <a href="https://www.jumia.com.eg/ar/generic-weight-set-of-17-pcs-dumbbell-bar-2-pcs-17652847.html" class="myMdL btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 style">
+                        <img class="img-responsive center-block" src="imgs/lap.jpg" alt="bars">
+                        <h1>Apple MacBook</h1>
+                        <h2><span>32,999</span> Pounds</h2>
+                        <h3><span>-6%</span></h3>
+                        <ul class="list-unstyled">
+                            <li>2.4GHz quad-core 8th-generation Intel Core i5 processor, Turbo Boost up to 4.1GHz</li>
+                            <li>Retina display with True Tone</li>
+                            <li>Touch Bar and Touch ID</li>
+                            <li>8GB 2133MHz LPDDR3 memory</li>
+                            <li>Intel Iris Plus Graphics 655</li>
+                            <li>256GB SSD storage</li>
+                            <li>Four Thunderbolt 3 ports</li>
+                            <li>Backlit Keyboard - US English</li>
+                        </ul>
+                        <div class="buttons">
+                        <a href="https://www.jumia.com.eg/ar/apple-macbook-pro-13-with-touch-bar-mid-2019-mv992lla-intel-core-i5-8gb-ram-256gb-ssd-13.3-inch-retina-intel-gpu-macos-silver-english-keyboard-16102745.html" class="btn btn-primary">Add To Cart <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></a>
+                        <a href="https://www.jumia.com.eg/ar/apple-macbook-pro-13-with-touch-bar-mid-2019-mv992lla-intel-core-i5-8gb-ram-256gb-ssd-13.3-inch-retina-intel-gpu-macos-silver-english-keyboard-16102745.html" class="btn btn-primary">Buy Now</a>
+                   
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+<!-- End Products-->
+        <section class="our-team text-center" style="">
+            <div clas="team" style="background: rgba(2,2,2,.7); min-height:600px; color:whitesmoke;">
+                <div class="container">
+                    <h1>Our Team</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="person">
+                                test
+                                <i class="fa fa-google"></i>
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-accessible-icon"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="person">
+                                test
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="person">
+                                test
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="person">
+                                test
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum mollis maximus eu non felis. Suspendisse rutrum facilisis magna</p>
+                </div>
+            </div>    
+        </section>
+<!--start subscribe-->
+        <section class="subscribe text-center">
+            <div class="container">
+                <h1>Keep In Touch</h1>
+                <form class="form-inline">
+                    <input class="form-control input-lg" type="text" placeholder="write your e-mail">
+                    <button class="btn btn-danger btn-lg"><i class="fa fa-pencil-square"></i> Subsctibe</button>
+                </form>
+            </div>
+        </section>
+<!--End subscribe-->
+<!--Start Skills-->
+        <section class="our-skills">
+            <div class="container">
+                <h1 class="text-center">Skills</h1>
+                <div class="row">
+                    <!--Start progress Skills-->
+                    <div class="col-md-5 myProgress">
+                        <div class="progress" style="height: 43px; background-color: white">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="90%" aria-valuemin="0" aria-valuemax="100" style="width:90%; line-height:43px;">
+                                HTML 90%
+                            </div>
+                        </div>
+                        <div class="progress" style="height: 43px; background-color: white">
+                            <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="85%" aria-valuemin="0" aria-valuemax="100" style="width:85%; line-height:43px;">
+                                CSS 85%
+                            </div>
+                        </div>
+                        <div class="progress" style="height: 43px; background-color: white">
+                            <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="65%" aria-valuemin="0" aria-valuemax="100" style="width:65%; line-height:43px;">
+                                JS 65%
+                            </div>
+                        </div>
+                        <div class="progress" style="height: 43px; background-color: white">
+                            <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="75%" aria-valuemin="0" aria-valuemax="100" style="width:75%; line-height:43px;">
+                                jQuery 75%
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--End progress Skills-->
+                    
+                    <!--Start Team Info-->
+                    <div class="col-md-6 col-offset-1">
+                        <div class="skills-info">
+                            <h2>About The Team</h2>
+                            <p class="lead" style="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris fermentum dolor in justo commodo euismod. Praesent in mi nec velit facilisis suscipit. Sed rhoncus rutrum ante quis posuere. Curabitur a elit a ipsum mollis maximus eu non felis. Suspendisse rutrum facilisis magna</p>
+                            <button class="btn btn-primary">Talk With A Profissional</button>
+                        </div>
+                    </div>
+                    <!--End Team Info-->
+                </div>
+            </div>
+        </section>
+<!--End Skills-->
+<!--Start Contact Us-->
+        <section class="contact-us text-center">
+            <div class="contact">
+                <div class="container">
+                    <i class="fa fa-headphones fa-5x" aria-hidden="true"></i>
+                    <h1>Tell Us Your Opiniont</h1>
+                    <p class="lead">Don't Hesitate To Contact Us</p>
+                    <div class="row">
+                        
+                            <form role="form">
+                                <div class="col-md-6 info">                        
+                                    <input class="form-control form-group input-lg" rol="text" type="text" placeholder="User Name">
+                                    <input class="form-control form-group input-lg" rol="text" type="text" placeholder="E-mail">
+                                    <input class="form-control form-group input-lg" rol="password" type="password" placeholder="Password">
+                                </div>
+                                <div class="col-md-6">                              
+                                    <textarea class="form-control form-group input-lg" placeholder="Tell Us Your Opinion"></textarea>
+                                    <button class="btn btn-danger btn-block hvr-pop">Contact Us</button>
+                             </div>
+                            </form>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+<!--End Contact Us-->
+<!--Start Loading-->
+        <section class="loading" style="position: fixed ;top:0;left:0; width: 100%;height: 100%;background-color: darkorange; z-index: 9999">
+            
+            <div class="sk-circle">
+  <div class="sk-circle1 sk-child"></div>
+  <div class="sk-circle2 sk-child"></div>
+  <div class="sk-circle3 sk-child"></div>
+  <div class="sk-circle4 sk-child"></div>
+  <div class="sk-circle5 sk-child"></div>
+  <div class="sk-circle6 sk-child"></div>
+  <div class="sk-circle7 sk-child"></div>
+  <div class="sk-circle8 sk-child"></div>
+  <div class="sk-circle9 sk-child"></div>
+  <div class="sk-circle10 sk-child"></div>
+  <div class="sk-circle11 sk-child"></div>
+  <div class="sk-circle12 sk-child"></div>
+</div>
+        </section>
+<!--End Loading-->
+<!--Start Scroll Top-->
+        <section class="scroll-top">
+            <div class="scroll text-center" style="">
+                <i class="fa fa-chevron-up fa-3x"></i>
+            </div>
+        </section>
+<!--End Scroll Top-->
+<!--Start Nice Scroll-->
+<!--End Nice Scroll-->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js">
+            $("body").niceScroll({
+                cursorcolor: 'black',
+                cursorwidth: '16px',
+            })
+        </script>
+        <script src="js/templet-1.js"></script>
+    </body>
+</html>
